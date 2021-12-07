@@ -2,6 +2,9 @@
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+mkdir -p ~/.zsh
+mkdir -p ~/.config/nvim/lua
+
 echo "Installing submodules"
 git submodule update --init --recursive
 

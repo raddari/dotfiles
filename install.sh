@@ -14,5 +14,3 @@ ln -si ${BASEDIR}/nvim/lua/* ~/.config/nvim/lua/
 
 ln -si ${BASEDIR}/zshrc ~/.zshrc
 ln -si ${BASEDIR}/zsh/* ~/.zsh/
-
-source ~/.zshrc

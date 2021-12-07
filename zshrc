@@ -22,10 +22,9 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-
+source "${ZSH_CONFIG_DIR}/plugins.zsh"
 source "${ZSH_CONFIG_DIR}/environment.zsh"
 source "${ZSH_CONFIG_DIR}/aliases.zsh"
-source "${ZSH_CONFIG_DIR}/plugins.zsh"
 source "${ZSH_CONFIG_DIR}/keybinds.zsh"
 source "${ZSH_CONFIG_DIR}/prompt.zsh"
 

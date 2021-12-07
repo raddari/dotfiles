@@ -1,25 +1,32 @@
-# The following lines were added by compinstall
+# Auto correct mistakes
+setopt correct
+# Sort filenames numerically
+setopt numericglobsort
+setopt nobeep
+setopt autocd
+setopt histignorespace
+setopt append_history
+setopt inc_append_history
+setopt histignorealldups
+setopt nocheckjobs
+setopt nocaseglob
+setopt extendedglob
 
-zstyle ':completion:*' completer _expand _complete _ignored _approximate
-zstyle :compinstall filename "$HOME/.zshrc"
+export ZSH_CONFIG_DIR="$HOME/.zsh"
+source "${ZSH_CONFIG_DIR}/completion.zsh"
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-# Lines configured by zsh-newuser-install
+autoload -U colors
+colors
+
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-setopt autocd
-unsetopt beep
-bindkey -v
-# End of lines configured by zsh-newuser-install
 
-export ZSH_CONFIG_DIR="$HOME/.zsh"
-export XDG_DATA_HOME="$HOME/.config"
-export CC="/usr/bin/clang-12"
-export CXX="/usr/bin/clang++-12"
 
-source ${ZSH_CONFIG_DIR}/aliases.zsh
-source ${ZSH_CONFIG_DIR}/prompt.zsh
-source ${ZSH_CONFIG_DIR}/plugins.zsh
+source "${ZSH_CONFIG_DIR}/environment.zsh"
+source "${ZSH_CONFIG_DIR}/aliases.zsh"
+source "${ZSH_CONFIG_DIR}/plugins.zsh"
+source "${ZSH_CONFIG_DIR}/keybinds.zsh"
+source "${ZSH_CONFIG_DIR}/prompt.zsh"
+
+eval "$(dircolors -b)"

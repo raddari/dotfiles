@@ -1,9 +1,0 @@
-[submodule "zsh/zsh-syntax-highlighting"]
-	path = zsh/plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule "zsh/zsh-autosuggestions"]
-	path = zsh/plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "zsh/gitstatus"]
-	path = zsh/plugins/gitstatus
-	url = https://github.com/romkatv/gitstatus

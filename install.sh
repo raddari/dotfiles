@@ -1,16 +1,23 @@
 #!/bin/bash
 
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+base_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ln_args="-si"
 
-mkdir -p ~/.zsh
+if [ "$1" = "-y" ]; then
+  ln_args="-s"
+fi
+
+mkdir -p ~/.zsh/config
+mkdir -p ~/.zsh/plugins
 mkdir -p ~/.config/nvim/lua
 
 echo "Installing submodules"
 git submodule update --init --recursive
 
 echo "Symlinking files and directories"
-ln -si ${BASEDIR}/nvim/init.lua ~/.config/nvim/init.lua
-ln -si ${BASEDIR}/nvim/lua/* ~/.config/nvim/lua/
+ln $ln_args ${base_dir}/nvim/init.lua ~/.config/nvim/init.lua
+ln $ln_args ${base_dir}/nvim/lua/* ~/.config/nvim/lua/
 
-ln -si ${BASEDIR}/zshrc ~/.zshrc
-ln -si ${BASEDIR}/zsh/* ~/.zsh/
+ln $ln_args ${base_dir}/zshrc ~/.zshrc
+ln $ln_args ${base_dir}/zsh/config/* ~/.zsh/config
+ln $ln_args ${base_dir}/zsh/plugins/* ~/.zsh/plugins

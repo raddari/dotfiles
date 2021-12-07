@@ -1,8 +1,8 @@
 export GPG_TTY=$(tty)
 export XDG_DATA_HOME="$HOME/.config"
 
-export CC='/usr/bin/clang-12'
-export CXX='/usr/bin/clang++-12'
+export CC='clang'
+export CXX='clang++'
 
 export EDITOR='nvim'
 export VISUAL='nvim'

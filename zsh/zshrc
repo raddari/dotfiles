@@ -1,5 +1,3 @@
-# Auto correct mistakes
-setopt correct
 # Sort filenames numerically
 setopt numericglobsort
 setopt nobeep

@@ -1,11 +1,11 @@
-export GPG_TTY=$(tty)
+export GPG_TTY="$(tty)"
 export XDG_DATA_HOME="$HOME/.config"
 
-export CC='clang'
-export CXX='clang++'
+export CC="clang"
+export CXX="clang++"
 
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 # Colour man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'

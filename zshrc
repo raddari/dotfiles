@@ -18,7 +18,7 @@ source "${ZSH_CONFIG_DIR}/completion.zsh"
 autoload -U colors
 colors
 
-HISTFILE=~/.histfile
+HISTFILE="~/.histfile"
 HISTSIZE=1000
 SAVEHIST=1000
 

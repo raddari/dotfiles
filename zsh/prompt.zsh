@@ -13,4 +13,4 @@ PROMPT="${PROMPT}%{$reset_color%}"     # reset colour
 PROMPT="${PROMPT}${newline}"
 PROMPT="${PROMPT}$ "                   # prompt
 
-RPROMPT="%{${lineup}%}$GITSTATUS_PROMPT%{${linedown}%}"
+RPROMPT='%{${lineup}%}$GITSTATUS_PROMPT%{${linedown}%}'

@@ -10,7 +10,8 @@ setopt nocheckjobs
 setopt nocaseglob
 setopt extendedglob
 
-export ZSH_CONFIG_DIR="$HOME/.zsh"
+export ZSH_CONFIG_DIR="$HOME/.zsh/config"
+export ZSH_PLUGIN_DIR="$HOME/.zsh/plugins"
 source "${ZSH_CONFIG_DIR}/completion.zsh"
 
 autoload -U colors

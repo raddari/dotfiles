@@ -1,4 +1,4 @@
-source "${ZSH_CONFIG_DIR}/gitstatus/gitstatus.prompt.zsh"
+source "${ZSH_PLUGIN_DIR}/gitstatus/gitstatus.prompt.zsh"
 
 newline=$'\n'
 lineup=$'\e[1A'

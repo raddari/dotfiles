@@ -20,3 +20,5 @@ opt.sidescrolloff = 8
 opt.splitbelow = true
 opt.splitright = true
 opt.wildmode = {'list', 'longest'}
+opt.number = true
+opt.relativenumber = true

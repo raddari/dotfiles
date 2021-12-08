@@ -16,8 +16,8 @@ require 'paq' {
   'nvim-lua/plenary.nvim';
   'lewis6991/gitsigns.nvim';
   'sbdchd/neoformat';
-  'arcticicestudio/nord-vim';
   'sainnhe/everforest';
+  {'catppuccin/nvim', as = 'catppuccin'};
 }
 
 require 'nvim-treesitter.configs'.setup {
@@ -27,9 +27,25 @@ require 'nvim-treesitter.configs'.setup {
   }
 }
 
+require 'catppuccin'.setup {
+  styles = {
+    comments = 'NONE',
+    functions = 'NONE',
+    keywords = 'NONE'
+  },
+  integrations = {
+    native_lsp = {
+      enabled = false,
+    },
+    gitsigns = true
+  }
+}
+
 require 'lualine'.setup {
   options = {
-    theme = 'everforest',
+    theme = 'auto',
+    section_separators = { left = '', right = ''},
+    component_separators = { left = '', right = ''}
   }
 }
 
@@ -40,6 +56,6 @@ g.neoformat_enabled_cpp = {'clangformat'}
 
 g.c_syntax_for_h = 1
 
-vim.cmd 'colorscheme everforest'
+vim.cmd 'colorscheme catppuccin'
 
 require 'settings'

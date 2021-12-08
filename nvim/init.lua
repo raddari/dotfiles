@@ -16,7 +16,8 @@ require 'paq' {
   'nvim-lua/plenary.nvim';
   'lewis6991/gitsigns.nvim';
   'sbdchd/neoformat';
-  'arcticicestudio/nord-vim'
+  'arcticicestudio/nord-vim';
+  'sainnhe/everforest';
 }
 
 require 'nvim-treesitter.configs'.setup {
@@ -28,7 +29,7 @@ require 'nvim-treesitter.configs'.setup {
 
 require 'lualine'.setup {
   options = {
-    theme = 'nord',
+    theme = 'everforest',
   }
 }
 
@@ -39,6 +40,6 @@ g.neoformat_enabled_cpp = {'clangformat'}
 
 g.c_syntax_for_h = 1
 
-vim.cmd 'colorscheme nord'
+vim.cmd 'colorscheme everforest'
 
 require 'settings'

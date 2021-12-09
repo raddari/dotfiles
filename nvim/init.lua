@@ -44,15 +44,15 @@ require 'catppuccin'.setup {
 require 'lualine'.setup {
   options = {
     theme = 'auto',
-    section_separators = { left = '', right = ''},
-    component_separators = { left = '', right = ''}
+    component_separators = { left = ' ', right = ' ' },
+    section_separators = { left = '', right = '' },
   }
 }
 
 require 'gitsigns'.setup()
 
-g.neoformat_enabled_c = {'clangformat'}
-g.neoformat_enabled_cpp = {'clangformat'}
+g.neoformat_enabled_c = { 'clangformat' }
+g.neoformat_enabled_cpp = { 'clangformat' }
 
 g.c_syntax_for_h = 1
 

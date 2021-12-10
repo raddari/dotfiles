@@ -12,6 +12,7 @@ require 'paq' {
   'nvim-treesitter/nvim-treesitter';
   'hoob3rt/lualine.nvim';
   'kyazdani42/nvim-web-devicons';
+  'kyazdani42/nvim-tree.lua';
   'cdelledonne/vim-cmake';
   'nvim-lua/plenary.nvim';
   'lewis6991/gitsigns.nvim';
@@ -19,6 +20,16 @@ require 'paq' {
   'sainnhe/everforest';
   {'catppuccin/nvim', as = 'catppuccin'};
 }
+
+g.nvim_tree_quit_on_open = 1
+g.nvim_tree_ignore = { '.git' }
+g.nvim_tree_git_hl = 1
+g.nvim_tree_show_icons = { git = 1, folders = 1, files = 1 }
+
+g.neoformat_enabled_c = { 'clangformat' }
+g.neoformat_enabled_cpp = { 'clangformat' }
+
+g.c_syntax_for_h = 1
 
 require 'nvim-treesitter.configs'.setup {
   ensure_installed = 'maintained',
@@ -49,13 +60,11 @@ require 'lualine'.setup {
   }
 }
 
+require 'nvim-tree'.setup()
+
 require 'gitsigns'.setup()
-
-g.neoformat_enabled_c = { 'clangformat' }
-g.neoformat_enabled_cpp = { 'clangformat' }
-
-g.c_syntax_for_h = 1
 
 vim.cmd 'colorscheme catppuccin'
 
 require 'settings'
+require 'keybinds'

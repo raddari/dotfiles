@@ -18,7 +18,7 @@ require 'paq' {
   'lewis6991/gitsigns.nvim';
   'sbdchd/neoformat';
   'sainnhe/everforest';
-  {'catppuccin/nvim', as = 'catppuccin'};
+  'rebelot/kanagawa.nvim';
 }
 
 g.nvim_tree_quit_on_open = 1
@@ -37,18 +37,9 @@ require 'nvim-treesitter.configs'.setup {
   }
 }
 
-require 'catppuccin'.setup {
-  styles = {
-    comments = 'NONE',
-    functions = 'NONE',
-    keywords = 'NONE'
-  },
-  integrations = {
-    native_lsp = {
-      enabled = false,
-    },
-    gitsigns = true
-  }
+require 'kanagawa'.setup {
+  keywordStyle = 'NONE',
+  variablebuiltinStyle = 'NONE'
 }
 
 require 'lualine'.setup {
@@ -67,7 +58,7 @@ require 'nvim-tree'.setup {
 
 require 'gitsigns'.setup()
 
-vim.cmd 'colorscheme catppuccin'
+vim.cmd 'colorscheme kanagawa'
 
 require 'settings'
 require 'keybinds'

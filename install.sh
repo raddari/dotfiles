@@ -21,3 +21,8 @@ ln $ln_args ${base_dir}/nvim/lua/* ~/.config/nvim/lua/
 ln $ln_args ${base_dir}/zsh/zshrc ~/.zshrc
 ln $ln_args ${base_dir}/zsh/config/* ~/.zsh/config
 ln $ln_args ${base_dir}/zsh/plugins/* ~/.zsh/plugins
+
+echo "Sourcing"
+source ~/.zshrc
+
+echo "Done!"

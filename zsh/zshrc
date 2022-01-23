@@ -1,5 +1,5 @@
-# Sort filenames numerically
-setopt numericglobsort
+#!/bin/zsh
+setopt numericglobsort # Sort filenames numerically
 setopt nobeep
 setopt autocd
 setopt histignorespace

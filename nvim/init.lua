@@ -17,8 +17,8 @@ require('paq') {
   'nvim-lua/plenary.nvim';
   'lewis6991/gitsigns.nvim';
   'sbdchd/neoformat';
-  'sainnhe/everforest';
-  'EdenEast/nightfox.nvim';
+  'rktjmp/lush.nvim';
+  'rose-pine/neovim';
 }
 
 g.nvim_tree_quit_on_open = 1
@@ -53,7 +53,8 @@ require('nvim-tree').setup({
 
 require('gitsigns').setup()
 
-require('nightfox').load('nordfox')
+g.rose_pine_disable_italics = true;
+require('rose-pine').set('moon');
 
 require('settings')
 require('keybinds')

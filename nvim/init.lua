@@ -9,7 +9,7 @@ end
 
 require('paq') {
   'savq/paq-nvim';
-  'nvim-treesitter/nvim-treesitter';
+  {'nvim-treesitter/nvim-treesitter', run = fn['TSUpdate']};
   'hoob3rt/lualine.nvim';
   'kyazdani42/nvim-web-devicons';
   'kyazdani42/nvim-tree.lua';
@@ -23,10 +23,10 @@ require('paq') {
 
 g.nvim_tree_quit_on_open = 1
 g.nvim_tree_git_hl = 1
-g.nvim_tree_show_icons = { git = 1, folders = 1, files = 1 }
+g.nvim_tree_show_icons = {git = 1, folders = 1, files = 1}
 
-g.neoformat_enabled_c = { 'clangformat' }
-g.neoformat_enabled_cpp = { 'clangformat' }
+g.neoformat_enabled_c = {'clangformat'}
+g.neoformat_enabled_cpp = {'clangformat'}
 
 g.c_syntax_for_h = 1
 
@@ -40,14 +40,14 @@ require('nvim-treesitter.configs').setup({
 require('lualine').setup({
   options = {
     theme = 'auto',
-    component_separators = { left = '', right = '' },
-    section_separators = { left = '', right = '' },
+    component_separators = {left = '', right = ''},
+    section_separators = {left = '', right = ''},
   }
 })
 
 require('nvim-tree').setup({
   filters = {
-    custom = { '.git' }
+    custom = {'.git'}
   }
 })
 

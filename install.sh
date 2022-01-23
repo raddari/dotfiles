@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/zsh
 base_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ln_args="-si"
 

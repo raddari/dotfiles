@@ -12,17 +12,16 @@ setopt extendedglob
 
 export ZSH_CONFIG_DIR="$HOME/.zsh/config"
 export ZSH_PLUGIN_DIR="$HOME/.zsh/plugins"
-source "${ZSH_CONFIG_DIR}/completion.zsh"
-
-autoload -U colors
-colors
 
 HISTFILE="~/.histfile"
 HISTSIZE=1000
 SAVEHIST=1000
 
+autoload -U colors
+colors
 eval "$(dircolors -b)"
 
+source "${ZSH_CONFIG_DIR}/completion.zsh"
 source "${ZSH_CONFIG_DIR}/plugins.zsh"
 source "${ZSH_CONFIG_DIR}/environment.zsh"
 source "${ZSH_CONFIG_DIR}/aliases.zsh"

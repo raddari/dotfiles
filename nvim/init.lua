@@ -7,7 +7,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   fn.system({'git', 'clone', '--depth=1', 'https://github.com/savq/paq-nvim.git', install_path})
 end
 
-require 'paq' {
+require('paq') {
   'savq/paq-nvim';
   'nvim-treesitter/nvim-treesitter';
   'hoob3rt/lualine.nvim';
@@ -18,7 +18,7 @@ require 'paq' {
   'lewis6991/gitsigns.nvim';
   'sbdchd/neoformat';
   'sainnhe/everforest';
-  'rebelot/kanagawa.nvim';
+  'EdenEast/nightfox.nvim';
 }
 
 g.nvim_tree_quit_on_open = 1
@@ -30,35 +30,30 @@ g.neoformat_enabled_cpp = { 'clangformat' }
 
 g.c_syntax_for_h = 1
 
-require 'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup({
   ensure_installed = 'maintained',
   highlight = {
     enable = true
   }
-}
+})
 
-require 'kanagawa'.setup {
-  keywordStyle = 'NONE',
-  variablebuiltinStyle = 'NONE'
-}
-
-require 'lualine'.setup {
+require('lualine').setup({
   options = {
     theme = 'auto',
-    component_separators = { left = ' ', right = ' ' },
+    component_separators = { left = '', right = '' },
     section_separators = { left = '', right = '' },
   }
-}
+})
 
-require 'nvim-tree'.setup {
+require('nvim-tree').setup({
   filters = {
     custom = { '.git' }
   }
-}
+})
 
-require 'gitsigns'.setup()
+require('gitsigns').setup()
 
-vim.cmd 'colorscheme kanagawa'
+require('nightfox').load('nordfox')
 
-require 'settings'
-require 'keybinds'
+require('settings')
+require('keybinds')

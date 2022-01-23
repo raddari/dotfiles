@@ -3,6 +3,7 @@ export XDG_DATA_HOME="$HOME/.config"
 
 export CC="clang"
 export CXX="clang++"
+export LD="lld"
 
 export EDITOR="nvim"
 export VISUAL="nvim"

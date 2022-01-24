@@ -8,6 +8,8 @@ export LD="lld"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+export MANPAGER="nvim +Man!"
+
 # Colour man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'
 export LESS_TERMCAP_md=$'\E[01;32m'

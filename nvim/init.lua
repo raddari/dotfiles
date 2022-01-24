@@ -9,13 +9,14 @@ end
 
 require('paq') {
   'savq/paq-nvim';
-  {'nvim-treesitter/nvim-treesitter', run = fn['TSUpdate']};
+  {'nvim-treesitter/nvim-treesitter', run = fn[':TSUpdate']};
   'hoob3rt/lualine.nvim';
   'kyazdani42/nvim-web-devicons';
   'kyazdani42/nvim-tree.lua';
-  'cdelledonne/vim-cmake';
+  'beauwilliams/focus.nvim';
   'nvim-lua/plenary.nvim';
   'lewis6991/gitsigns.nvim';
+  'cdelledonne/vim-cmake';
   'sbdchd/neoformat';
   'rktjmp/lush.nvim';
   'rose-pine/neovim';
@@ -51,10 +52,12 @@ require('nvim-tree').setup({
   }
 })
 
+require('focus').setup()
+
 require('gitsigns').setup()
 
-g.rose_pine_disable_italics = true;
-require('rose-pine').set('moon');
+g.rose_pine_disable_italics = true
+require('rose-pine').set('moon')
 
 require('settings')
 require('keybinds')

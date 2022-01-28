@@ -15,8 +15,11 @@ local keymap = function (key)
 end
 
 keymap {'n', '<Leader>t', ':NvimTreeToggle<CR>'}
+
 keymap {'n', '<Leader>ff', ':Telescope git_files<CR>'}
 keymap {'n', '<Leader>fa', ':Telescope find_files<CR>'}
 keymap {'n', '<Leader>fg', ':Telescope live_grep<CR>'}
 keymap {'n', '<Leader>fb', ':Telescope buffers<CR>'}
 keymap {'n', '<Leader>fh', ':Telescope help_tags<CR>'}
+
+keymap {'n', '<Leader>l', ':Limelight!!<CR>'}

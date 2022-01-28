@@ -9,14 +9,15 @@ end
 
 require('paq') {
   'savq/paq-nvim';
-  'nvim-treesitter/nvim-treesitter';
-  'hoob3rt/lualine.nvim';
   'kyazdani42/nvim-web-devicons';
+  'nvim-lua/plenary.nvim';
+  'hoob3rt/lualine.nvim';
+  'lewis6991/gitsigns.nvim';
+  'nvim-treesitter/nvim-treesitter';
   'kyazdani42/nvim-tree.lua';
   'beauwilliams/focus.nvim';
-  'nvim-lua/plenary.nvim';
+  'junegunn/limelight.vim';
   'nvim-telescope/telescope.nvim';
-  'lewis6991/gitsigns.nvim';
   'cdelledonne/vim-cmake';
   'sbdchd/neoformat';
   'rktjmp/lush.nvim';

@@ -18,7 +18,6 @@ require('paq') {
   'beauwilliams/focus.nvim';
   'junegunn/limelight.vim';
   'nvim-telescope/telescope.nvim';
-  'cdelledonne/vim-cmake';
   'sbdchd/neoformat';
   'rktjmp/lush.nvim';
   'rose-pine/neovim';

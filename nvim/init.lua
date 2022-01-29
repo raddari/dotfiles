@@ -15,6 +15,7 @@ require('paq') {
   'lewis6991/gitsigns.nvim';
   'nvim-treesitter/nvim-treesitter';
   'kyazdani42/nvim-tree.lua';
+  'neovim/nvim-lspconfig';
   'beauwilliams/focus.nvim';
   'junegunn/limelight.vim';
   'nvim-telescope/telescope.nvim';

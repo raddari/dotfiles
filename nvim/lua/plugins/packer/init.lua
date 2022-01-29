@@ -1,7 +1,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 local plugins = {
-	require('plugin.rose-pine')
+  require('plugin.rose-pine'),
+  require('plugin.treesitter'),
 }
 
 local packer = require('packer')

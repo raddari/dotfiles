@@ -1,0 +1,24 @@
+local opt = vim.opt
+
+opt.completeopt = {'menuone', 'noinsert', 'noselect'}
+opt.dir = '/tmp'
+opt.expandtab = true
+opt.hidden = true
+opt.ignorecase = true
+opt.joinspaces = true
+opt.list = true
+opt.number = true
+opt.number = true
+opt.relativenumber = true
+opt.scrolloff = 4
+opt.shiftround = true
+opt.shiftwidth = 2
+opt.sidescrolloff = 8
+opt.smartcase = true
+opt.smartindent = true
+opt.splitbelow = true
+opt.splitright = true
+opt.swapfile = true
+opt.tabstop = 2
+opt.termguicolors = true
+opt.wildmode = {'list', 'longest'}

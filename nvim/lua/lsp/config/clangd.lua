@@ -13,4 +13,7 @@ return {
     completeUnimported = true,
     semanticHighlighting = true,
   },
+  on_attach = function (client, buffer)
+    vim.api.nvim_buf_set_option(buffer, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+  end,
 }

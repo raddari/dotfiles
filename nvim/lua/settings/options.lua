@@ -8,7 +8,6 @@ opt.ignorecase = true
 opt.joinspaces = true
 opt.list = true
 opt.number = true
-opt.number = true
 opt.relativenumber = true
 opt.scrolloff = 4
 opt.shiftround = true

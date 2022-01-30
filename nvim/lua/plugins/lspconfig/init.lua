@@ -1,7 +1,8 @@
 local M = {
   'neovim/nvim-lspconfig',
-  config = function()
+  config = function ()
     require('plugin.lspconfig.config')
+    require('plugin.lspconfig.keymap')
   end,
 }
 

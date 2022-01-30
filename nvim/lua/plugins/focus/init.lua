@@ -1,6 +1,6 @@
 return {
   'beauwilliams/focus.nvim',
-  config = function()
+  config = function ()
     require('plugin.focus.config')
   end,
 }

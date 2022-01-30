@@ -1,6 +1,6 @@
 return {
   'rose-pine/neovim',
-  config = function()
+  config = function ()
     require('plugin.themes.rose-pine.config')
   end,
 }

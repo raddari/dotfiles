@@ -1,10 +1,13 @@
 vim.cmd([[packadd packer.nvim]])
 
 local plugins = {
+  require('plugin.filetype'),
   require('plugin.focus'),
   require('plugin.gitsigns'),
+  require('plugin.limelight'),
   require('plugin.lspconfig'),
   require('plugin.lualine'),
+  require('plugin.telescope'),
   require('plugin.themes'),
   require('plugin.tree'),
   require('plugin.treesitter'),

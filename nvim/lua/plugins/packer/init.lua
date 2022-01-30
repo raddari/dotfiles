@@ -1,9 +1,13 @@
-vim.cmd [[packadd packer.nvim]]
+vim.cmd([[packadd packer.nvim]])
 
 local plugins = {
-  require('plugin.themes'),
-  require('plugin.treesitter'),
+  require('plugin.focus'),
+  require('plugin.gitsigns'),
+  require('plugin.lspconfig'),
   require('plugin.lualine'),
+  require('plugin.themes'),
+  require('plugin.tree'),
+  require('plugin.treesitter'),
 }
 
 local packer = require('packer')

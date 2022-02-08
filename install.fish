@@ -8,6 +8,11 @@ function group_data_link --description "group_data_link <group> <sources...>"
   for i in $argv[2..-1]
     mv -f "$data_dir/$group/$i" "$data_dir/$group/$i.orig"
     data_link "$base_dir/$group/$i" "$data_dir/$group/"
+
+    if test -e "$data_dir/$group/$i/$i"
+      # TODO(raddari): this seems to be duplicated for directories every install
+      rm -f "$data_dir/$group/$i/$i"
+    end
   end
 end
 

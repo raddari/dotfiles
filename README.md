@@ -7,7 +7,11 @@ Here be me dotfiles
 
 ## Post install
 - Set desired theme with `fish_config theme`
-- Clone packer for Neovim with:
+- Clone packer for neovim with:
 ```sh
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+  - Then open neovim and run:
+```
+:PackerSync
 ```

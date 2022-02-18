@@ -11,4 +11,4 @@ keymap {'n', '<Leader>sv', '<Cmd>vsplit<CR>'}
 keymap {'n', '<Leader>sh', '<Cmd>split<CR>'}
 
 -- Remove highlighting
-keymap {'n', '<Leader>hc', '<Cmd>noh<CR>'}
+keymap {'n', '<Leader>rh', '<Cmd>noh<CR>'}

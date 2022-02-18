@@ -6,5 +6,9 @@ keymap {'', '<Down>', '<Nop>'}
 keymap {'', '<Left>', '<Nop>'}
 keymap {'', '<Right>', '<Nop>'}
 
+-- Buffer splits
 keymap {'n', '<Leader>sv', '<Cmd>vsplit<CR>'}
 keymap {'n', '<Leader>sh', '<Cmd>split<CR>'}
+
+-- Remove highlighting
+keymap {'n', '<Leader>hc', '<Cmd>noh<CR>'}

@@ -1,5 +1,6 @@
-local g = vim.g
+require('rose-pine').setup({
+  dark_variant = 'main',
+  disable_italics = true,
+})
 
-g.rose_pine_disable_italics = true
-
-require('rose-pine').set('main')
+vim.cmd('colorscheme rose-pine')

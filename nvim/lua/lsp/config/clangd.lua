@@ -20,5 +20,6 @@ return {
 
     keymap {'n', '<Leader>rn', '<Cmd>lua vim.lsp.buf.rename()<CR>'}
     keymap {'n', '<C-k>', '<Cmd>lua vim.lsp.buf.signature_help()<CR>'}
+    keymap {'n', '<Leader>ss', '<Cmd>ClangdSwitchSourceHeader<CR>'}
   end,
 }

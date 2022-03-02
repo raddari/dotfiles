@@ -1,1 +1,1 @@
-rose-pine/init.lua
+catppuccin/init.lua

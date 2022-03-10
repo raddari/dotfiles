@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 function group_data_link --description "group_data_link <group> <sources...>"
-  set -l base_dir (dirname (readlink -m (status --current-filename)))
+  set -l base_dir (pwd)
   set -l data_dir "$HOME/.config"
   set -l group "$argv[1]"
 

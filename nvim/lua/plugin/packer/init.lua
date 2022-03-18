@@ -11,7 +11,6 @@ local plugins = {
   require('plugin.filetype'),
   require('plugin.focus'),
   require('plugin.gitsigns'),
-  require('plugin.haskell-vim'),
   require('plugin.limelight'),
   require('plugin.lspconfig'),
   require('plugin.lualine'),

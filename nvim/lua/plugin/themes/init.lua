@@ -1,1 +1,1 @@
-catppuccin/init.lua
+kanagawa/init.lua

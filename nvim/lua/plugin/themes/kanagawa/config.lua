@@ -1,6 +1,10 @@
 require('kanagawa').setup({
-  keywordStyle = 'NONE',
-  variablebuiltinStyle = 'NONE',
+  keywordStyle = {
+    italic = false,
+  },
+  variablebuiltinStyle = {
+    italic = false,
+  },
 })
 
 vim.cmd('colorscheme kanagawa')

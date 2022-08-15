@@ -12,6 +12,10 @@ return {
       },
       format = {
         enable = true,
+        defaultConfig = {
+          quote_style = 'single',
+          space_before_function_open_parenthesis = true,
+        },
       },
       telemetry = {
         enable = false,

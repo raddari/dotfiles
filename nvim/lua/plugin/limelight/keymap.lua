@@ -1,3 +1,3 @@
-require('lib.keymap')
+local keymap = vim.keymap
 
-keymap {'n', '<Leader>l', '<Cmd>Limelight!!<CR>'}
+keymap.set('n', '<Leader>l', '<Cmd>Limelight!!<CR>')

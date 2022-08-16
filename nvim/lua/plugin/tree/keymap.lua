@@ -1,3 +1,3 @@
-require('lib.keymap')
+local keymap = vim.keymap
 
-keymap {'n', '<Leader>t', '<Cmd>NvimTreeToggle<CR>'}
+keymap.set('n', '<Leader>t', '<Cmd>NvimTreeToggle<CR>')

@@ -1,6 +1,6 @@
 local opt = vim.opt
 
-opt.completeopt = {'menuone', 'noinsert', 'noselect'}
+opt.completeopt = { 'menuone', 'noinsert', 'noselect' }
 opt.dir = '/tmp'
 opt.expandtab = true
 opt.hidden = true
@@ -20,4 +20,4 @@ opt.splitright = true
 opt.swapfile = true
 opt.tabstop = 2
 opt.termguicolors = true
-opt.wildmode = {'list', 'longest'}
+opt.wildmode = { 'list', 'longest' }

@@ -1,5 +1,3 @@
-local g = vim.g
-
 require('nvim-tree').setup({
   actions = {
     open_file = {
@@ -7,7 +5,7 @@ require('nvim-tree').setup({
     },
   },
   filters = {
-    custom = {'.git'}
+    custom = { '.git' }
   },
   renderer = {
     highlight_git = true,

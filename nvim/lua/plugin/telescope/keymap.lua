@@ -1,7 +1,13 @@
 local keymap = vim.keymap
 
-keymap.set('n', '<Leader>ff', '<Cmd>Telescope git_files<CR>')
-keymap.set('n', '<Leader>fa', '<Cmd>Telescope find_files<CR>')
-keymap.set('n', '<Leader>fg', '<Cmd>Telescope live_grep<CR>')
-keymap.set('n', '<Leader>fb', '<Cmd>Telescope buffers<CR>')
-keymap.set('n', '<Leader>fh', '<Cmd>Telescope help_tags<CR>')
+local telescope = {}
+setmetatable(telescope, {
+  __index = function(_, key)
+    return require('telescope.' .. key)
+  end
+})
+
+keymap.set('n', '<Leader>ff', telescope.builtin.git_files)
+keymap.set('n', '<Leader>fa', telescope.builtin.find_files)
+keymap.set('n', '<Leader>fg', telescope.builtin.live_grep)
+keymap.set('n', '<Leader>fb', telescope.builtin.buffers)

@@ -1,7 +1,6 @@
 local opt = vim.opt
 
 opt.completeopt = { 'menuone', 'noinsert', 'noselect' }
-opt.dir = '/tmp'
 opt.expandtab = true
 opt.fillchars:append({
   horiz = '━',

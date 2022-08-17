@@ -5,6 +5,7 @@ require('kanagawa').setup({
   variablebuiltinStyle = {
     italic = false,
   },
+  globalStatus = true,
 })
 
 vim.cmd('colorscheme kanagawa')

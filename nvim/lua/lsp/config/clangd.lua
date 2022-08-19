@@ -1,8 +1,6 @@
 return {
   cmd = {
     'clangd',
-    '--clang-tidy',
-    '--clang-tidy-checks=-*,clang-analyzer-*,bugprone-*,-bugprone-sizeof-expression,modernise-*',
     '--completion-style=bundled',
     '--cross-file-rename',
     '--header-insertion=never',

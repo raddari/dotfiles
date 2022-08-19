@@ -8,7 +8,8 @@ end
 set dotfiles_dir (dirname (readlink -m (status --current-filename)))
 source "$dotfiles_dir/fish/conf.d/000-env.fish"
 
-set -l modules "fish" "nvim" "tmux"
+set -l modules "fish" "nvim" "tmux" "clangd"
 for module in $modules
+  mkdir -p "$XDG_CONFIG_HOME/$module"
   link_module "$module"
 end

@@ -1,15 +1,18 @@
 #!/usr/bin/env fish
 
 function link_module
-  set -l source_dir "$dotfiles_dir/$argv[1]"
-  ln -svi $source_dir/* "$XDG_CONFIG_HOME/$argv[1]"
+  set -f module "$argv[1]"
+  set -f source_dir "$argv[2]"
+  set -f dest_dir "$XDG_CONFIG_HOME/$module"
+  mkdir -p "$dest_dir"
+  ln -svi $source_dir/* $dest_dir
 end
 
 set dotfiles_dir (dirname (readlink -m (status --current-filename)))
-source "$dotfiles_dir/fish/conf.d/000-env.fish"
+source "$dotfiles_dir/config/fish/conf.d/000-env.fish"
 
 set -l modules "fish" "nvim" "tmux" "clangd"
 for module in $modules
-  mkdir -p "$XDG_CONFIG_HOME/$module"
-  link_module "$module"
+  # TODO(raddari): split into own install files
+  link_module "$module" "$dotfiles_dir/config/$module"
 end

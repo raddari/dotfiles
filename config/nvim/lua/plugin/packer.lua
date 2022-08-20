@@ -16,6 +16,7 @@ local plugins = {
   require('plugin.limelight'),
   require('plugin.lspconfig'),
   require('plugin.lualine'),
+  require('plugin.rust-tools'),
   require('plugin.telescope'),
   require('plugin.themes'),
   require('plugin.treesitter'),

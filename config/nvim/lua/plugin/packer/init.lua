@@ -10,7 +10,6 @@ end
 vim.cmd('packadd packer.nvim')
 
 local plugins = {
-  require('plugin.filetype'),
   require('plugin.focus'),
   require('plugin.gitsigns'),
   require('plugin.limelight'),

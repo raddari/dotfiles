@@ -10,6 +10,7 @@ end
 vim.cmd('packadd packer.nvim')
 
 local plugins = {
+  require('plugin.coq'),
   require('plugin.focus'),
   require('plugin.gitsigns'),
   require('plugin.limelight'),
@@ -17,7 +18,6 @@ local plugins = {
   require('plugin.lualine'),
   require('plugin.telescope'),
   require('plugin.themes'),
-  require('plugin.tree'),
   require('plugin.treesitter'),
 }
 

@@ -1,0 +1,6 @@
+gui:
+  selectedLineBgColor:
+    - default
+  selectedRangeBgColor:
+    - default
+  showIcons: true

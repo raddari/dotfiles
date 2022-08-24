@@ -22,4 +22,4 @@ Diagnostics:
       readability-implicit-bool-conversion.AllowPointerConditions: true
 
 InlayHints:
-  Enabled: No
+  Enabled: Yes

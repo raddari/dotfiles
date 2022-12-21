@@ -2,3 +2,7 @@
 	path = config/nvim
 	url = https://github.com/raddari/init.nvim.git
 	branch = main
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty

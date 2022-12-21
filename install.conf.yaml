@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean:
+    ~/.config:
+      recursive: true
+
+- link:
+    ~/.config/:
+      glob: true
+      path: config/*
+      exclude: [config/fish]
+    ~/.config/fish/conf.d: config/fish/conf.d
+
+- shell:
+    - git submodule sync --recursive

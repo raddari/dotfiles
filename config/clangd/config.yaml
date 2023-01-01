@@ -3,20 +3,19 @@ Diagnostics:
     Add:
       [
         "bugprone-*",
-        "clang-analyzer-*",
-        "concurrency-*",
         "cppcoreguidelines-*",
         "misc-*",
         "modernize-*",
         "performance-*",
-        "portability-*",
         "readability-*",
       ]
     Remove:
       [
-        "readability-identifier*",
-        "readability-magic-numbers",
         "cppcoreguidelines-avoid-magic-numbers",
+        "cppcoreguidelines-owning-memory",
+        "readability-identifier*",
+        "misc-unused-parameters",
+        "readability-magic-numbers",
       ]
     CheckOptions:
       readability-implicit-bool-conversion.AllowPointerConditions: true
